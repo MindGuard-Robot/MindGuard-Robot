@@ -202,3 +202,102 @@ footer {
   padding: 30px;
   background: rgba(0,245,255,0.2);
 }
+/* ================= MOBILE RESPONSIVE PATCH ================= */
+
+/* Make everything scale properly */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* NAV for mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 10px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* HERO text resize */
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 15px;
+  }
+
+  .glitch {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .neon-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Glass sections width fix */
+@media (max-width: 768px) {
+  .glass {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+/* Robot model resize */
+@media (max-width: 768px) {
+  .robot-model {
+    height: 250px;
+  }
+}
+
+/* Mood buttons stack properly */
+@media (max-width: 768px) {
+  .mood-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .mood-buttons button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+/* Emergency button size */
+@media (max-width: 768px) {
+  .emergency-btn {
+    font-size: 16px;
+    padding: 15px 25px;
+  }
+}
+
+/* Footer padding */
+@media (max-width: 768px) {
+  footer {
+    padding: 20px 10px;
+    font-size: 13px;
+  }
+}
+
+/* Startup screen text adjust */
+@media (max-width: 768px) {
+  #codeText {
+    font-size: 12px;
+    width: 90%;
+  }
+
+  .boot-text {
+    font-size: 13px;
+    text-align: center;
+  }
+}
